@@ -14,11 +14,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://caterengine.com"),
-  title: "CaterEngine | Turn Your Restaurant Into a Catering Engine",
-  description: "Custom catering technology, funded demand generation, and operating support for growth-ready restaurants.",
+  title: { default: "CaterEngine | Restaurant Catering Growth", template: "%s | CaterEngine" },
+  description: "Catering technology, demand generation, and operating support for growth-ready restaurants in Houston, Austin, and Dallas.",
   openGraph: {
-    title: "Turn your restaurant into a catering engine.",
-    description: "Technology, demand generation, and operations—with $0 upfront for qualified partners.",
+    title: "CaterEngine — Powering Catering. Delivering Success.",
+    description: "A complete catering growth system for ambitious restaurant operators.",
     type: "website",
     images: [{ url: "/og.png", width: 1792, height: 900, alt: "CaterEngine — turn your restaurant into a catering engine" }],
   },
