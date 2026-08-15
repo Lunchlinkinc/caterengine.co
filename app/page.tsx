@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { PageShell } from "./components/PageShell";
 
@@ -22,7 +21,7 @@ export default function Home() {
               <div className="trust-line"><span>✓ No upfront platform cost for qualified partners</span><span>✓ Built around your restaurant</span></div>
             </div>
             <div className="hero-photo gold-hero-art">
-              <Image src="/images/caterengine-gold-hero.jpg" alt="CaterEngine catering success brand banner" fill priority sizes="(max-width: 900px) 100vw, 1180px" />
+              <img src="/images/caterengine-gold-hero.jpg" alt="CaterEngine catering success brand banner" />
             </div>
           </div>
         </section>
@@ -48,11 +47,11 @@ export default function Home() {
 
         <section className="container platform-showcase">
           <div><p className="section-tag">One connected platform</p><h2>Orders, customers, delivery, and payments—working together.</h2><p>Your custom CaterEngine experience gives buyers a professional path to order and gives your team a clearer system to manage demand.</p><Link className="primary-btn" href="/how-it-works">Explore the platform →</Link></div>
-          <div className="platform-image"><Image src="/images/caterengine-gold-platform.jpg" alt="CaterEngine catering management platform" fill sizes="(max-width: 800px) 100vw, 50vw" /></div>
+          <div className="platform-image"><img src="/images/caterengine-gold-platform.jpg" alt="CaterEngine catering management platform" /></div>
         </section>
 
         <section className="split-story">
-          <div className="story-image"><Image src="/images/caterengine-gold-food.jpg" alt="CaterEngine catered food presentation" fill sizes="(max-width: 800px) 100vw, 50vw" /></div>
+          <div className="story-image"><img src="/images/caterengine-gold-food.jpg" alt="CaterEngine catered food presentation" /></div>
           <div className="story-copy"><p className="section-tag light">Built for real restaurant operations</p><h2>A growth plan your kitchen can actually fulfill.</h2><p>More orders only help when the menu travels well, the team can execute, and customers receive a consistent experience. That is why we work on the offer and operation—not just the ads.</p><ul><li><span>01</span>Catering menu and packaging readiness</li><li><span>02</span>Delivery area and order economics</li><li><span>03</span>Lead response and fulfillment workflow</li><li><span>04</span>Repeat-order strategy</li></ul><Link className="secondary-btn" href="/partners">See if your restaurant fits →</Link></div>
         </section>
 
@@ -68,8 +67,8 @@ export default function Home() {
               <div><strong>$106,529.80</strong><span>reported catering revenue</span></div><div><strong>163</strong><span>reported orders</span></div><div><strong>$653.56</strong><span>reported average order value</span></div><div><strong>$3,626.04</strong><span>reported tips</span></div>
             </div>
             <div className="proof-screens">
-              <figure><div><Image src="/images/results-dashboard.png" alt="CaterEngine partner dashboard showing revenue, orders, and invoices" fill sizes="(max-width: 800px) 100vw, 50vw" /></div><figcaption>Recent dashboard snapshot · $21,584.92 revenue and 30 orders</figcaption></figure>
-              <figure><div><Image src="/images/results-report.png" alt="CaterEngine partner performance report with revenue trend" fill sizes="(max-width: 800px) 100vw, 50vw" /></div><figcaption>Historical report snapshot · December 31, 2025–August 31, 2026</figcaption></figure>
+              <figure><div><img src="/images/results-dashboard.png" alt="CaterEngine partner dashboard showing revenue, orders, and invoices" /></div><figcaption>Recent dashboard snapshot · $21,584.92 revenue and 30 orders</figcaption></figure>
+              <figure><div><img src="/images/results-report.png" alt="CaterEngine partner performance report with revenue trend" /></div><figcaption>Historical report snapshot · December 31, 2025–August 31, 2026</figcaption></figure>
             </div>
             <p className="proof-disclaimer">Results vary by restaurant, market, menu, capacity, service, and execution. Screenshots were supplied by CaterEngine and reflect different reporting periods.</p>
           </div>
@@ -77,7 +76,7 @@ export default function Home() {
 
         <section className="container transformation-section">
           <div className="transformation-heading"><div><p className="section-tag">The transformation</p><h2>From scattered catering tasks to one organized growth channel.</h2></div><p>CaterEngine helps replace manual follow-up and disconnected tools with a clearer customer journey, order workflow, and delivery-ready operation.</p></div>
-          <figure className="before-after"><Image src="/images/restaurant-before-after.png" alt="The same restaurant before and after adopting an organized CaterEngine catering workflow" width={1672} height={941} /><figcaption>Conceptual illustration of the operational change—not a guaranteed outcome.</figcaption></figure>
+          <figure className="before-after"><img src="/images/restaurant-before-after.png" alt="The same restaurant before and after adopting an organized CaterEngine catering workflow" /><figcaption>Conceptual illustration of the operational change—not a guaranteed outcome.</figcaption></figure>
         </section>
 
         <section className="cta-band"><div className="container"><p>Now reviewing restaurants in Houston, Austin, and Dallas.</p><h2>Could catering become your next serious revenue channel?</h2><Link className="white-btn" href="/apply">Start your application <span>→</span></Link></div></section>
