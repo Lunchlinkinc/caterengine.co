@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://caterengine.com"),
+  metadataBase: new URL("https://caterengine-growth.info211179.chatgpt.site"),
   title: { default: "CaterEngine | Restaurant Catering Growth", template: "%s | CaterEngine" },
   description: "Catering technology, demand generation, and operating support for growth-ready restaurants in Houston, Austin, and Dallas.",
   keywords: ["restaurant catering software", "catering management software", "corporate catering marketing", "grow catering sales", "restaurant catering Houston", "restaurant catering Austin", "restaurant catering Dallas"],
@@ -40,7 +40,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({"@context":"https://schema.org","@type":"Organization",name:"CaterEngine",url:"https://caterengine.com",email:"getcaterengine@gmail.com",description:"Restaurant catering technology, demand generation, and operating support.",areaServed:[{"@type":"City",name:"Houston"},{"@type":"City",name:"Austin"},{"@type":"City",name:"Dallas"}]})}} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({"@context":"https://schema.org","@type":"Organization",name:"CaterEngine",url:"https://caterengine-growth.info211179.chatgpt.site",email:"getcaterengine@gmail.com",description:"Restaurant catering technology, demand generation, and operating support.",areaServed:[{"@type":"City",name:"Houston"},{"@type":"City",name:"Austin"},{"@type":"City",name:"Dallas"}]})}} />
       </body>
     </html>
   );

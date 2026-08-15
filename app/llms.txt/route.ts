@@ -11,12 +11,12 @@ export function GET() { return new Response(`# CaterEngine
 - Contact: getcaterengine@gmail.com
 
 ## Important pages
-- Home: https://caterengine.com/
-- How it works: https://caterengine.com/how-it-works
-- Restaurant partners: https://caterengine.com/partners
-- Apply: https://caterengine.com/apply
-- Insights: https://caterengine.com/blog
-- Houston: https://caterengine.com/locations/houston
-- Austin: https://caterengine.com/locations/austin
-- Dallas: https://caterengine.com/locations/dallas
+- Home: https://caterengine-growth.info211179.chatgpt.site/
+- How it works: https://caterengine-growth.info211179.chatgpt.site/how-it-works
+- Restaurant partners: https://caterengine-growth.info211179.chatgpt.site/partners
+- Apply: https://caterengine-growth.info211179.chatgpt.site/apply
+- Insights: https://caterengine-growth.info211179.chatgpt.site/blog
+- Houston: https://caterengine-growth.info211179.chatgpt.site/locations/houston
+- Austin: https://caterengine-growth.info211179.chatgpt.site/locations/austin
+- Dallas: https://caterengine-growth.info211179.chatgpt.site/locations/dallas
 `, { headers: { "Content-Type": "text/plain; charset=utf-8" } }); }

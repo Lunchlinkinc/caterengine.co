@@ -9,7 +9,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
   const post = getPost((await params).slug); if (!post) notFound();
-  const articleSchema = { "@context": "https://schema.org", "@type": "Article", headline: post.title, description: post.description, datePublished: post.date, dateModified: post.date, author: { "@type": "Organization", name: "CaterEngine" }, publisher: { "@type": "Organization", name: "CaterEngine", url: "https://caterengine.com" } };
+  const articleSchema = { "@context": "https://schema.org", "@type": "Article", headline: post.title, description: post.description, datePublished: post.date, dateModified: post.date, author: { "@type": "Organization", name: "CaterEngine" }, publisher: { "@type": "Organization", name: "CaterEngine", url: "https://caterengine-growth.info211179.chatgpt.site" } };
   const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: post.faqs.map((faq) => ({ "@type": "Question", name: faq.question, acceptedAnswer: { "@type": "Answer", text: faq.answer } })) };
   return <PageShell><main><article className="container article-page">
     <nav aria-label="Breadcrumb"><Link href="/blog">Insights</Link><span> / </span>{post.category}</nav>
