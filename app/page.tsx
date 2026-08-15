@@ -21,11 +21,8 @@ export default function Home() {
               <div className="actions"><Link className="primary-btn" href="/apply">Apply to become a partner <span>→</span></Link><Link className="quiet-link" href="/how-it-works">Explore the model</Link></div>
               <div className="trust-line"><span>✓ No upfront platform cost for qualified partners</span><span>✓ Built around your restaurant</span></div>
             </div>
-            <div className="hero-photo">
-              <Image src="/images/corporate-catering.jpg" alt="Business professionals at a catered restaurant event" fill priority sizes="(max-width: 900px) 100vw, 48vw" />
-              <span className="illustration hero-illustration ill-cloche" aria-hidden="true" />
-              <div className="photo-label"><b>From kitchen capacity</b><span>to corporate demand</span></div>
-              <div className="logo-stamp"><Image src="/images/caterengine-logo.png" alt="CaterEngine logo" width={492} height={515} /></div>
+            <div className="hero-photo gold-hero-art">
+              <Image src="/images/caterengine-gold-hero.jpg" alt="CaterEngine catering success brand banner" fill priority sizes="(max-width: 900px) 100vw, 1180px" />
             </div>
           </div>
         </section>
@@ -49,8 +46,13 @@ export default function Home() {
           <article><span>03</span><i className="illustration ill-calendar" aria-hidden="true"/><h3>Grow the channel</h3><p>Lead workflows, performance visibility, and ongoing optimization that help turn first-time buyers into repeat accounts.</p><Link href="/how-it-works">Operating support →</Link></article>
         </section>
 
+        <section className="container platform-showcase">
+          <div><p className="section-tag">One connected platform</p><h2>Orders, customers, delivery, and payments—working together.</h2><p>Your custom CaterEngine experience gives buyers a professional path to order and gives your team a clearer system to manage demand.</p><Link className="primary-btn" href="/how-it-works">Explore the platform →</Link></div>
+          <div className="platform-image"><Image src="/images/caterengine-gold-platform.jpg" alt="CaterEngine catering management platform" fill sizes="(max-width: 800px) 100vw, 50vw" /></div>
+        </section>
+
         <section className="split-story">
-          <div className="story-image"><Image src="/images/catering-spread.jpg" alt="Professionally presented catering spread" fill sizes="(max-width: 800px) 100vw, 50vw" /></div>
+          <div className="story-image"><Image src="/images/caterengine-gold-food.jpg" alt="CaterEngine catered food presentation" fill sizes="(max-width: 800px) 100vw, 50vw" /></div>
           <div className="story-copy"><p className="section-tag light">Built for real restaurant operations</p><h2>A growth plan your kitchen can actually fulfill.</h2><p>More orders only help when the menu travels well, the team can execute, and customers receive a consistent experience. That is why we work on the offer and operation—not just the ads.</p><ul><li><span>01</span>Catering menu and packaging readiness</li><li><span>02</span>Delivery area and order economics</li><li><span>03</span>Lead response and fulfillment workflow</li><li><span>04</span>Repeat-order strategy</li></ul><Link className="secondary-btn" href="/partners">See if your restaurant fits →</Link></div>
         </section>
 

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: { default: "CaterEngine | Restaurant Catering Growth", template: "%s | CaterEngine" },
   description: "Catering technology, demand generation, and operating support for growth-ready restaurants in Houston, Austin, and Dallas.",
   openGraph: {
-    title: "CaterEngine — Powering Catering. Delivering Success.",
+    title: "CaterEngine — Catering Success Starts Here.",
     description: "A complete catering growth system for ambitious restaurant operators.",
     type: "website",
     images: [{ url: "/og.png", width: 1792, height: 900, alt: "CaterEngine — turn your restaurant into a catering engine" }],
