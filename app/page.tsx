@@ -61,6 +61,25 @@ export default function Home() {
           <div className="model-options"><article className="green-card"><span>PERFORMANCE PARTNERSHIP</span><h3>$0 upfront</h3><p>For qualified restaurants, we invest in the launch and participate through an agreed commission structure.</p><Link href="/apply">Apply for partnership →</Link></article><article><span>FLAT-FEE OPTION</span><h3>$3,000</h3><p>Ask about a straightforward flat-fee path if that structure better matches your operation.</p><Link href="/apply">Discuss the options →</Link></article></div>
         </section>
 
+        <section className="results-proof">
+          <div className="container">
+            <div className="results-heading"><div><p className="section-tag light">Partner performance proof</p><h2>Real orders.<br/>Visible performance.</h2></div><p>These operational dashboard snapshots show actual catering activity managed through the system. They are presented as historical examples—not a promise of future results.</p></div>
+            <div className="results-numbers">
+              <div><strong>$106,529.80</strong><span>reported catering revenue</span></div><div><strong>163</strong><span>reported orders</span></div><div><strong>$653.56</strong><span>reported average order value</span></div><div><strong>$3,626.04</strong><span>reported tips</span></div>
+            </div>
+            <div className="proof-screens">
+              <figure><div><Image src="/images/results-dashboard.png" alt="CaterEngine partner dashboard showing revenue, orders, and invoices" fill sizes="(max-width: 800px) 100vw, 50vw" /></div><figcaption>Recent dashboard snapshot · $21,584.92 revenue and 30 orders</figcaption></figure>
+              <figure><div><Image src="/images/results-report.png" alt="CaterEngine partner performance report with revenue trend" fill sizes="(max-width: 800px) 100vw, 50vw" /></div><figcaption>Historical report snapshot · December 31, 2025–August 31, 2026</figcaption></figure>
+            </div>
+            <p className="proof-disclaimer">Results vary by restaurant, market, menu, capacity, service, and execution. Screenshots were supplied by CaterEngine and reflect different reporting periods.</p>
+          </div>
+        </section>
+
+        <section className="container transformation-section">
+          <div className="transformation-heading"><div><p className="section-tag">The transformation</p><h2>From scattered catering tasks to one organized growth channel.</h2></div><p>CaterEngine helps replace manual follow-up and disconnected tools with a clearer customer journey, order workflow, and delivery-ready operation.</p></div>
+          <figure className="before-after"><Image src="/images/restaurant-before-after.png" alt="The same restaurant before and after adopting an organized CaterEngine catering workflow" width={1672} height={941} /><figcaption>Conceptual illustration of the operational change—not a guaranteed outcome.</figcaption></figure>
+        </section>
+
         <section className="cta-band"><div className="container"><p>Now reviewing restaurants in Houston, Austin, and Dallas.</p><h2>Could catering become your next serious revenue channel?</h2><Link className="white-btn" href="/apply">Start your application <span>→</span></Link></div></section>
       </main>
     </PageShell>
