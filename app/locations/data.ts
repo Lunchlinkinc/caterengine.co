@@ -1,0 +1,5 @@
+export const markets = {
+  houston: { city: "Houston", state: "Texas", description: "Catering growth systems for independent Houston restaurants ready to reach offices, medical centers, energy companies, and local events.", audiences: ["Downtown and Uptown offices", "Medical and professional teams", "Energy and industrial workplaces", "Events and community organizations"] },
+  austin: { city: "Austin", state: "Texas", description: "Catering technology and growth support for Austin restaurants serving technology teams, coworking spaces, campuses, and events.", audiences: ["Technology and startup teams", "Coworking and creative offices", "Education and professional groups", "Corporate meetings and local events"] },
+  dallas: { city: "Dallas", state: "Texas", description: "A connected catering growth platform for Dallas restaurants pursuing corporate accounts, recurring meetings, and group orders.", audiences: ["Downtown and North Dallas offices", "Professional and financial services", "Healthcare and property teams", "Conferences and corporate events"] }
+} as const;

@@ -8,6 +8,7 @@ export function SiteHeader() {
         <nav aria-label="Primary navigation">
           <Link href="/how-it-works">How it works</Link>
           <Link href="/partners">For restaurants</Link>
+          <Link href="/blog">Insights</Link>
           <Link href="/about">About</Link>
         </nav>
         <Link className="nav-cta" href="/apply">Become a partner <span>→</span></Link>

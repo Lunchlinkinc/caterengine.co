@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { PageShell } from "./components/PageShell";
+import { blogPosts } from "./blog/posts";
 
 const marketStats = [
   ["75%", "of restaurant traffic now happens off-premises"],
@@ -77,6 +78,11 @@ export default function Home() {
         <section className="container transformation-section">
           <div className="transformation-heading"><div><p className="section-tag">The transformation</p><h2>From scattered catering tasks to one organized growth channel.</h2></div><p>CaterEngine helps replace manual follow-up and disconnected tools with a clearer customer journey, order workflow, and delivery-ready operation.</p></div>
           <figure className="before-after"><img src="/images/restaurant-before-after.png" alt="The same restaurant before and after adopting an organized CaterEngine catering workflow" /><figcaption>Conceptual illustration of the operational change—not a guaranteed outcome.</figcaption></figure>
+        </section>
+
+        <section className="container home-insights">
+          <div className="insights-heading"><div><p className="section-tag">Catering growth insights</p><h2>Practical guidance for restaurant operators.</h2></div><Link className="quiet-link" href="/blog">View all insights →</Link></div>
+          <div className="insights-cards">{blogPosts.map((post)=><article key={post.slug}><span>{post.category} · {post.readTime}</span><h3><Link href={`/blog/${post.slug}`}>{post.title}</Link></h3><p>{post.description}</p><Link href={`/blog/${post.slug}`}>Read the guide →</Link></article>)}</div>
         </section>
 
         <section className="cta-band"><div className="container"><p>Now reviewing restaurants in Houston, Austin, and Dallas.</p><h2>Could catering become your next serious revenue channel?</h2><Link className="white-btn" href="/apply">Start your application <span>→</span></Link></div></section>
