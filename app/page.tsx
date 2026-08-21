@@ -15,11 +15,12 @@ export default function Home() {
         <section className="hero-v2">
           <div className="container hero-v2-grid">
             <div className="hero-v2-copy">
-              <p className="overline">A catering growth partner for independent restaurants</p>
-              <h1>More catering orders.<br/><em>One system to run them.</em></h1>
-              <p className="hero-text">CaterEngine combines a custom ordering experience, demand generation, and hands-on operating support—so your restaurant can build a repeatable corporate catering channel.</p>
+              <p className="overline">The CaterEngine growth guarantee</p>
+              <h1>Make $15K every month through catering—<br/><em>or you don’t pay.</em></h1>
+              <p className="hero-text">We generated $20M in catering sales in four months. Now CaterEngine brings the ordering experience, demand generation, and hands-on operating support to help qualified restaurant partners build a serious catering channel.</p>
               <div className="actions"><Link className="primary-btn" href="/apply">Apply to become a partner <span>→</span></Link><Link className="quiet-link" href="/how-it-works">Explore the model</Link></div>
-              <div className="trust-line"><span>✓ No upfront platform cost for qualified partners</span><span>✓ Built around your restaurant</span></div>
+              <div className="trust-line"><span>✓ $15K monthly catering target</span><span>✓ Performance guarantee for qualified partners</span></div>
+              <p className="guarantee-note">Eligibility, onboarding, operating requirements, measurement period, and guarantee terms apply. Historical sales are aggregate CaterEngine-reported results; individual results vary.</p>
             </div>
             <div className="hero-photo gold-hero-art">
               <img src="/images/caterengine-gold-hero.jpg" alt="CaterEngine catering success brand banner" />
@@ -63,7 +64,7 @@ export default function Home() {
 
         <section className="results-proof">
           <div className="container">
-            <div className="results-heading"><div><p className="section-tag light">Partner performance proof</p><h2>Real orders.<br/>Visible performance.</h2></div><p>These operational dashboard snapshots show actual catering activity managed through the system. They are presented as historical examples—not a promise of future results.</p></div>
+            <div className="results-heading"><div><p className="section-tag light">Partner performance proof</p><h2>$20M in catering sales.<br/>Four months.</h2></div><p>Our reported aggregate results show what a focused catering engine can produce. The operational dashboard snapshots below offer a closer look at activity managed through the system.</p></div>
             <div className="results-numbers">
               <div><strong>$106,529.80</strong><span>reported catering revenue</span></div><div><strong>163</strong><span>reported orders</span></div><div><strong>$653.56</strong><span>reported average order value</span></div><div><strong>$3,626.04</strong><span>reported tips</span></div>
             </div>

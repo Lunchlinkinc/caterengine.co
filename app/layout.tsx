@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://caterengine-growth.info211179.chatgpt.site"),
   title: { default: "CaterEngine | Restaurant Catering Growth", template: "%s | CaterEngine" },
-  description: "Catering technology, demand generation, and operating support for growth-ready restaurants in Houston, Austin, and Dallas.",
+  description: "Make $15K every month through catering—or you don’t pay. CaterEngine combines catering technology, demand generation, and operating support for qualified restaurant partners.",
   keywords: ["restaurant catering software", "catering management software", "corporate catering marketing", "grow catering sales", "restaurant catering Houston", "restaurant catering Austin", "restaurant catering Dallas"],
   alternates: { canonical: "/" },
   openGraph: {
