@@ -77,7 +77,7 @@ export default function Home() {
 
         <section className="container platform-showcase">
           <div><p className="section-tag">One connected platform</p><h2>Orders, customers, delivery, and payments—working together.</h2><p>Your custom CaterEngine experience gives buyers a professional path to order and gives your team a clearer system to manage demand.</p><Link className="primary-btn" href="/how-it-works">Explore the platform →</Link></div>
-          <div className="platform-image"><img src="/images/caterengine-gold-platform.jpg" alt="CaterEngine catering management platform" /></div>
+          <div className="platform-image"><img src="/images/caterengine-blue-platform.png" alt="CaterEngine restaurant catering management platform in the blue brand palette" /></div>
         </section>
 
         <section className="split-story">
