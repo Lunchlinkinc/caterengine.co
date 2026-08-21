@@ -11,7 +11,7 @@ export function SiteHeader() {
           <Link href="/blog">Insights</Link>
           <Link href="/about">About</Link>
         </nav>
-        <a className="nav-cta" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3BBIEf8UCyIYBlPyt_lcpFfm_RzF_RZ28koeo8B6H3wBPju4V8zAynz2nY7XrORxUoreXYRllv" target="_blank" rel="noreferrer">Book a Google Meet <span>→</span></a>
+        <a className="nav-cta" href="https://calendar.app.google/WmCbFXkcxR2xq81U7" target="_blank" rel="noreferrer">Book a Google Meet <span>→</span></a>
       </div>
     </header>
   );

@@ -29,7 +29,7 @@ export default function Home() {
               <p className="overline">For restaurant owners and multi-location operators</p>
               <h1>Make $15K every month through catering—<br/><em>or you don’t pay.</em></h1>
               <p className="hero-text">CaterEngine is a restaurant growth partner—not a catering company for consumers. We bring branded ordering technology, corporate catering demand generation, and hands-on operating support to help qualified restaurants build a serious revenue channel.</p>
-              <div className="actions"><Link className="primary-btn" href="/apply">Apply to become a partner <span>→</span></Link><a className="quiet-link" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3BBIEf8UCyIYBlPyt_lcpFfm_RzF_RZ28koeo8B6H3wBPju4V8zAynz2nY7XrORxUoreXYRllv" target="_blank" rel="noreferrer">Book a Google Meet</a></div>
+              <div className="actions"><Link className="primary-btn" href="/apply">Apply to become a partner <span>→</span></Link><a className="quiet-link" href="https://calendar.app.google/WmCbFXkcxR2xq81U7" target="_blank" rel="noreferrer">Book a Google Meet</a></div>
               <div className="trust-line"><span>✓ $15K monthly catering target</span><span>✓ Performance guarantee for qualified partners</span></div>
               <p className="guarantee-note">Eligibility, onboarding, operating requirements, measurement period, and guarantee terms apply. Historical sales are aggregate CaterEngine-reported results; individual results vary.</p>
             </div>
@@ -117,7 +117,7 @@ export default function Home() {
           <div className="insights-cards">{blogPosts.map((post)=><article key={post.slug}><span>{post.category} · {post.readTime}</span><h3><Link href={`/blog/${post.slug}`}>{post.title}</Link></h3><p>{post.description}</p><Link href={`/blog/${post.slug}`}>Read the guide →</Link></article>)}</div>
         </section>
 
-        <section className="cta-band"><div className="container"><p>30-minute discovery calls available Monday–Friday.</p><h2>Let’s talk about your restaurant’s catering opportunity.</h2><a className="white-btn" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3BBIEf8UCyIYBlPyt_lcpFfm_RzF_RZ28koeo8B6H3wBPju4V8zAynz2nY7XrORxUoreXYRllv" target="_blank" rel="noreferrer">Schedule a Google Meet <span>→</span></a></div></section>
+        <section className="cta-band"><div className="container"><p>30-minute discovery calls available Monday–Friday.</p><h2>Let’s talk about your restaurant’s catering opportunity.</h2><a className="white-btn" href="https://calendar.app.google/WmCbFXkcxR2xq81U7" target="_blank" rel="noreferrer">Schedule a Google Meet <span>→</span></a></div></section>
       </main>
     </PageShell>
   );
