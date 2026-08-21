@@ -85,11 +85,6 @@ export default function Home() {
           <div className="story-copy"><p className="section-tag light">Built for real restaurant operations</p><h2>A growth plan your kitchen can actually fulfill.</h2><p>More orders only help when the menu travels well, the team can execute, and customers receive a consistent experience. That is why we work on the offer and operation—not just the ads.</p><ul><li><span>01</span>Catering menu and packaging readiness</li><li><span>02</span>Delivery area and order economics</li><li><span>03</span>Lead response and fulfillment workflow</li><li><span>04</span>Repeat-order strategy</li></ul><Link className="secondary-btn" href="/partners">See if your restaurant fits →</Link></div>
         </section>
 
-        <section className="container section-v2 model-section">
-          <div><p className="section-tag">Commercial model</p><h2>Built to keep our incentives aligned.</h2><span className="illustration section-illustration ill-trays" aria-hidden="true"/></div>
-          <div className="model-options"><article className="green-card"><span>PERFORMANCE PARTNERSHIP</span><h3>$0 upfront</h3><p>For qualified restaurants, we invest in the launch and participate through an agreed commission structure.</p><Link href="/apply">Apply for partnership →</Link></article><article><span>FLAT-FEE OPTION</span><h3>$3,000</h3><p>Ask about a straightforward flat-fee path if that structure better matches your operation.</p><Link href="/apply">Discuss the options →</Link></article></div>
-        </section>
-
         <section className="results-proof">
           <div className="container">
             <div className="results-heading"><div><p className="section-tag light">Partner performance proof</p><h2>$20M in catering sales.<br/>Four months.</h2></div><p>Our reported aggregate results show what a focused catering engine can produce. The operational dashboard snapshots below offer a closer look at activity managed through the system.</p></div>
