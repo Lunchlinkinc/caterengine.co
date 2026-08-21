@@ -4,14 +4,14 @@ export async function POST(request:Request){
   const required=["name","email","phone","restaurant","city","state","revenue","locations","goals","consent"];
   if(required.some(k=>!body[k]?.trim()))return Response.json({error:"Please complete all required fields."},{status:400});
   if(!/^\S+@\S+\.\S+$/.test(body.email))return Response.json({error:"Please enter a valid email."},{status:400});
-  const form=new FormData();
-  form.set("_subject",`New CaterEngine application: ${body.restaurant.trim()}`); form.set("_template","table"); form.set("_captcha","false");
-  form.set("_replyto",body.email.trim().toLowerCase());
-  form.set("Name",body.name.trim()); form.set("Email",body.email.trim().toLowerCase()); form.set("Phone",body.phone.trim());
-  form.set("Restaurant",body.restaurant.trim()); form.set("Location",`${body.city.trim()}, ${body.state.trim()}`); form.set("Website",body.website?.trim()||"Not provided");
-  form.set("Revenue",body.revenue.trim()); form.set("Locations",body.locations.trim()); form.set("Goals",body.goals.trim());
-  const emailResponse=await fetch("https://formsubmit.co/getcaterengine@gmail.com",{method:"POST",headers:{Accept:"application/json"},body:form});
-  if(!emailResponse.ok)throw new Error(`Application email failed with status ${emailResponse.status}`);
+  const form={
+   _subject:`New CaterEngine application: ${body.restaurant.trim()}`,_template:"table",_captcha:"false",_replyto:body.email.trim().toLowerCase(),_url:"https://www.caterengine.co/apply",
+   Name:body.name.trim(),Email:body.email.trim().toLowerCase(),Phone:body.phone.trim(),Restaurant:body.restaurant.trim(),
+   Location:`${body.city.trim()}, ${body.state.trim()}`,Website:body.website?.trim()||"Not provided",Revenue:body.revenue.trim(),Locations:body.locations.trim(),Goals:body.goals.trim()
+  };
+  const emailResponse=await fetch("https://formsubmit.co/ajax/getcaterengine@gmail.com",{method:"POST",headers:{Accept:"application/json","Content-Type":"application/json",Referer:"https://www.caterengine.co/"},body:JSON.stringify(form)});
+  const emailResult=await emailResponse.json().catch(()=>null) as {success?:boolean|string;message?:string}|null;
+  if(!emailResponse.ok||emailResult?.success===false||emailResult?.success==="false")throw new Error(`Application email failed (${emailResponse.status}): ${emailResult?.message||"Unknown FormSubmit response"}`);
   return Response.json({ok:true,emailForwarded:true},{status:201});
  }catch(error){console.error("Application submission failed",error);return Response.json({error:"Unable to save application."},{status:500});}
 }
