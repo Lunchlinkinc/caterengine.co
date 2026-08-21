@@ -27,14 +27,26 @@ export default function Home() {
         <section className="hero-v2">
           <div className="container hero-v2-grid">
             <div className="hero-v2-copy">
-              <p className="overline">For restaurant operators across the United States</p>
-              <h1>Add $250K a year to your restaurant through catering—<br/><em>or you don’t pay.</em></h1>
-              <p className="hero-text">CaterEngine is a restaurant growth partner—not a catering company for consumers. We bring branded ordering technology, corporate catering demand generation, and hands-on operating support to help qualified restaurants build a serious revenue channel.</p>
-              <div className="actions"><Link className="primary-btn" href="#restaurant-application">Apply to become a partner <span>→</span></Link><a className="quiet-link" href="https://calendar.app.google/WmCbFXkcxR2xq81U7" target="_blank" rel="noreferrer">Book a Google Meet</a></div>
-              <div className="trust-line"><span>✓ $250K annual catering revenue target</span><span>✓ Performance guarantee for qualified partners</span></div>
-              <p className="guarantee-note">Eligibility, onboarding, operating requirements, measurement period, and guarantee terms apply. Historical sales are aggregate CaterEngine-reported results; individual results vary.</p>
+              <p className="overline">The $250K restaurant catering guarantee</p>
+              <h1>We add $250,000 in catering revenue to your restaurant—<br/><em>or you pay us nothing.</em></h1>
+              <p className="hero-text">You already make the food. We build and operate the growth system around it—your catering offer, ordering experience, corporate demand generation, lead follow-up, fulfillment workflow, and repeat-order engine.</p>
+              <div className="actions"><Link className="primary-btn" href="#restaurant-application">See if my restaurant qualifies <span>→</span></Link><a className="quiet-link" href="https://calendar.app.google/WmCbFXkcxR2xq81U7" target="_blank" rel="noreferrer">Book a 30-minute call</a></div>
+              <div className="trust-line"><span>✓ One measurable $250K revenue target</span><span>✓ CaterEngine carries the performance risk</span><span>✓ Built for restaurant operators</span></div>
+              <p className="guarantee-note">For qualified restaurant partners under an agreed measurement period and operating plan. Eligibility, participation requirements, attribution rules, and guarantee terms apply. Individual results vary.</p>
             </div>
           </div>
+        </section>
+
+        <section className="container offer-stack">
+          <div className="offer-stack-heading"><div><p className="section-tag">The CaterEngine offer</p><h2>One outcome.<br/><em>One complete growth system.</em></h2></div><div className="offer-promise"><span>THE TARGET</span><strong>+$250K</strong><p>in restaurant catering revenue</p></div></div>
+          <div className="offer-deliverables">
+            <article><span>01</span><h3>Offer engineering</h3><p>We shape packages, pricing, minimums, delivery zones, and a catering menu designed to convert and travel well.</p></article>
+            <article><span>02</span><h3>Ordering system</h3><p>We build a professional branded path for inquiries, scheduled orders, payments, and customer communication.</p></article>
+            <article><span>03</span><h3>Demand generation</h3><p>We create campaigns and outreach designed to reach offices, administrators, and recurring business buyers.</p></article>
+            <article><span>04</span><h3>Sales follow-up</h3><p>We install a clear process to respond faster, recover open opportunities, and turn first orders into accounts.</p></article>
+            <article><span>05</span><h3>Operating support</h3><p>We improve production handoffs, packaging, delivery readiness, reporting, and the repeat-order workflow.</p></article>
+          </div>
+          <div className="offer-risk-reversal"><div><p className="section-tag light">The risk reversal</p><h3>If the agreed $250K target is not achieved, you do not pay our fee.</h3></div><div><p>This is a performance offer for qualified restaurants—not a blanket promise. Your restaurant must meet the agreed readiness, responsiveness, capacity, service, tracking, and execution requirements throughout the measurement period.</p><Link className="white-btn" href="#restaurant-application">Check eligibility →</Link></div></div>
         </section>
 
         <section className="market-bar">
