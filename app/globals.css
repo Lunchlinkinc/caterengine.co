@@ -61,3 +61,6 @@ body{background:#f7fbff}.real-restaurant-results{margin:18px;background:linear-g
 .split-story{grid-template-columns:.95fr 1.05fr;min-height:590px;max-width:1500px;margin:0 auto!important}.split-story .story-image{min-height:590px;overflow:hidden}.split-story .story-image img{object-position:64% center}.split-story .story-copy{padding-top:62px;padding-bottom:56px}.split-story .story-copy h2{font-size:clamp(42px,4.2vw,64px)}
 @media(max-width:900px){.split-story{grid-template-columns:1fr;max-width:calc(100% - 36px)}.split-story .story-image{min-height:420px}.split-story .story-copy{padding:58px 42px}}
 @media(max-width:620px){.split-story{max-width:calc(100% - 16px)}.split-story .story-image{min-height:320px}.split-story .story-copy{padding:46px 25px}.split-story .story-copy h2{font-size:40px}}
+
+/* Homepage restaurant application */
+.home-application{scroll-margin-top:100px}.home-application h2{font-size:clamp(44px,4.8vw,68px);line-height:.98;letter-spacing:-.06em;margin:24px 0 25px}.home-application .apply-layout>div:first-child>p:not(.overline){color:#dbeafe}.home-application .apply-layout li{color:#e0f2fe}

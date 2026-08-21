@@ -10,6 +10,7 @@ export function SiteHeader() {
           <Link href="/partners">For restaurants</Link>
           <Link href="/blog">Insights</Link>
           <Link href="/about">About</Link>
+          <Link href="/#restaurant-application">Apply</Link>
         </nav>
         <a className="nav-cta" href="https://calendar.app.google/WmCbFXkcxR2xq81U7" target="_blank" rel="noreferrer">Book a Google Meet <span>→</span></a>
       </div>

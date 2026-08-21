@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { PageShell } from "./components/PageShell";
 import { blogPosts } from "./blog/posts";
+import { ApplicationForm } from "./apply/ApplicationForm";
 
 export const metadata: Metadata = { title: "Restaurant Catering Growth System for Owners", description: "CaterEngine helps restaurant owners increase catering sales with ordering software, corporate catering lead generation, and hands-on fulfillment support.", alternates: { canonical: "/" } };
 
@@ -29,7 +30,7 @@ export default function Home() {
               <p className="overline">For restaurant owners and multi-location operators</p>
               <h1>Add $250K a year to your restaurant through catering—<br/><em>or you don’t pay.</em></h1>
               <p className="hero-text">CaterEngine is a restaurant growth partner—not a catering company for consumers. We bring branded ordering technology, corporate catering demand generation, and hands-on operating support to help qualified restaurants build a serious revenue channel.</p>
-              <div className="actions"><Link className="primary-btn" href="/apply">Apply to become a partner <span>→</span></Link><a className="quiet-link" href="https://calendar.app.google/WmCbFXkcxR2xq81U7" target="_blank" rel="noreferrer">Book a Google Meet</a></div>
+              <div className="actions"><Link className="primary-btn" href="#restaurant-application">Apply to become a partner <span>→</span></Link><a className="quiet-link" href="https://calendar.app.google/WmCbFXkcxR2xq81U7" target="_blank" rel="noreferrer">Book a Google Meet</a></div>
               <div className="trust-line"><span>✓ $250K annual catering revenue target</span><span>✓ Performance guarantee for qualified partners</span></div>
               <p className="guarantee-note">Eligibility, onboarding, operating requirements, measurement period, and guarantee terms apply. Historical sales are aggregate CaterEngine-reported results; individual results vary.</p>
             </div>
@@ -53,6 +54,13 @@ export default function Home() {
           <article><span>01</span><i className="illustration ill-office" aria-hidden="true"/><h3>Get discovered</h3><p>Local campaign strategy and approved Google Ads designed to reach offices, admins, and business buyers in your delivery area.</p><Link href="/how-it-works">Demand generation →</Link></article>
           <article><span>02</span><i className="illustration ill-box" aria-hidden="true"/><h3>Convert demand</h3><p>A custom-branded catering storefront with menus, ordering, lead capture, payments, and an experience buyers can trust.</p><Link href="/how-it-works">Catering technology →</Link></article>
           <article><span>03</span><i className="illustration ill-calendar" aria-hidden="true"/><h3>Grow the channel</h3><p>Lead workflows, performance visibility, and ongoing optimization that help turn first-time buyers into repeat accounts.</p><Link href="/how-it-works">Operating support →</Link></article>
+        </section>
+
+        <section className="apply-page home-application" id="restaurant-application">
+          <div className="container apply-layout">
+            <div><p className="overline light">Apply directly from the homepage</p><h2>Is your restaurant ready to build a serious catering channel?</h2><p>Tell us about your restaurant, current catering revenue, locations, and growth goals. Our team will review the opportunity and contact you if there is a potential fit.</p><ul><li>Built specifically for restaurant owners</li><li>No upfront commitment to apply</li><li>Reviewed by the CaterEngine team</li></ul></div>
+            <ApplicationForm />
+          </div>
         </section>
 
         <section className="container platform-showcase">
