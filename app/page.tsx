@@ -58,7 +58,7 @@ export default function Home() {
         </section>
 
         <section className="split-story">
-          <div className="story-image"><img src="/images/caterengine-gold-food.jpg" alt="CaterEngine catered food presentation" /></div>
+          <div className="story-image"><img src="/images/caterengine-premium-catering-hero.png" alt="Restaurant catering spread ready for a large group order" /></div>
           <div className="story-copy"><p className="section-tag light">Built for real restaurant operations</p><h2>A growth plan your kitchen can actually fulfill.</h2><p>More orders only help when the menu travels well, the team can execute, and customers receive a consistent experience. That is why we work on the offer and operation—not just the ads.</p><ul><li><span>01</span>Catering menu and packaging readiness</li><li><span>02</span>Delivery area and order economics</li><li><span>03</span>Lead response and fulfillment workflow</li><li><span>04</span>Repeat-order strategy</li></ul><Link className="secondary-btn" href="/partners">See if your restaurant fits →</Link></div>
         </section>
 

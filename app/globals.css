@@ -56,3 +56,8 @@ body{background:#f7fbff}.real-restaurant-results{margin:18px;background:linear-g
 .hero-v2{padding-bottom:90px}.hero-v2-grid{width:min(1180px,calc(100% - 48px));max-width:1180px}.hero-v2-copy{max-width:920px;margin-inline:auto;text-align:center}.hero-v2-copy .actions,.hero-v2-copy .trust-line{justify-content:center}
 @media(max-width:900px){.hero-v2-copy{text-align:center}.hero-v2-copy .actions,.hero-v2-copy .trust-line{justify-content:center}}
 @media(max-width:620px){.hero-v2-grid{width:min(100% - 28px,1180px)}.hero-v2-copy{text-align:left}.hero-v2-copy .actions,.hero-v2-copy .trust-line{justify-content:flex-start}}
+
+/* Compact restaurant-operations story */
+.split-story{grid-template-columns:.95fr 1.05fr;min-height:590px;max-width:1500px;margin:0 auto!important}.split-story .story-image{min-height:590px;overflow:hidden}.split-story .story-image img{object-position:64% center}.split-story .story-copy{padding-top:62px;padding-bottom:56px}.split-story .story-copy h2{font-size:clamp(42px,4.2vw,64px)}
+@media(max-width:900px){.split-story{grid-template-columns:1fr;max-width:calc(100% - 36px)}.split-story .story-image{min-height:420px}.split-story .story-copy{padding:58px 42px}}
+@media(max-width:620px){.split-story{max-width:calc(100% - 16px)}.split-story .story-image{min-height:320px}.split-story .story-copy{padding:46px 25px}.split-story .story-copy h2{font-size:40px}}
