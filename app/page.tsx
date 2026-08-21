@@ -85,10 +85,24 @@ export default function Home() {
         </section>
 
         <section className="real-restaurant-results">
-          <div className="container">
-            <div className="real-results-intro"><div><p className="section-tag light">Real results</p><h2>From real<br/><em>restaurant operators.</em></h2></div><div><p>CaterEngine-reported performance data shows what happens when catering demand, ordering, and operations work as one system.</p><Link className="white-btn" href="/apply">Could your restaurant be next? →</Link></div></div>
+          <div className="results-collage-shell">
+            <div className="results-mosaic results-mosaic-left" aria-label="Restaurant partners">
+              <a className="mosaic-tile tile-one" href="https://www.larios.ca/" target="_blank" rel="noreferrer"><img src="/partners/larios.webp" alt="La Rio’s Fresh Mexican Grill logo"/></a>
+              <a className="mosaic-tile tile-two" href="https://www.shawarmamoose.ca/" target="_blank" rel="noreferrer"><img src="/partners/shawarma-moose.png" alt="Shawarma Moose logo"/></a>
+              <a className="mosaic-tile tile-three" href="https://lunchlink.ca/" target="_blank" rel="noreferrer"><img src="/partners/lunchlink.png" alt="LunchLink logo"/></a>
+              <span className="mosaic-tile tile-photo"><img src="/images/caterengine-gold-food.jpg" alt="Restaurant catering presentation"/></span>
+            </div>
+            <div className="real-results-center"><p className="section-tag">Real results</p><h2>From real<br/>restaurant operators.</h2><p>CaterEngine-reported performance shows what can happen when demand, ordering, and restaurant operations work as one system.</p><Link className="primary-btn" href="/apply">See how we do it <span>→</span></Link></div>
+            <div className="results-mosaic results-mosaic-right" aria-label="Restaurant partners">
+              <a className="mosaic-tile tile-one" href="https://www.mehfill.ca/" target="_blank" rel="noreferrer"><img src="/partners/mehfill.png" alt="Mehfill Indian Cuisine logo"/></a>
+              <a className="mosaic-tile tile-two" href="https://gyrocity.ca/" target="_blank" rel="noreferrer"><img src="/partners/gyro-city.png" alt="Gyro City logo"/></a>
+              <span className="mosaic-tile tile-three"><img src="/images/catering-spread.jpg" alt="Catered restaurant meal spread"/></span>
+              <span className="mosaic-tile tile-photo"><img src="/images/corporate-catering.jpg" alt="Corporate catering service"/></span>
+            </div>
+          </div>
+          <div className="container real-results-detail">
             <div className="real-results-metrics"><article><strong>$20M</strong><span>reported aggregate catering sales</span></article><article><strong>4 months</strong><span>reported performance period</span></article><article><strong>163</strong><span>orders in a partner report</span></article><article><strong>$653.56</strong><span>reported average order value</span></article></div>
-            <div className="real-results-proof"><div><p className="overline light">Restaurant brands in our ecosystem</p><div className="partner-logo-grid">{partnerBrands.map((brand)=><a key={brand.name} href={brand.url} target="_blank" rel="noreferrer" aria-label={`Visit ${brand.name}`}><img src={brand.logo} alt={`${brand.name} logo`} /></a>)}</div></div><figure><img src="/images/results-dashboard.png" alt="CaterEngine dashboard showing restaurant catering revenue and orders"/><figcaption>Operational dashboard evidence · supplied by CaterEngine</figcaption></figure></div>
+            <div className="real-results-proof"><div><p className="overline">Restaurant brands in our ecosystem</p><div className="partner-logo-grid">{partnerBrands.map((brand)=><a key={brand.name} href={brand.url} target="_blank" rel="noreferrer" aria-label={`Visit ${brand.name}`}><img src={brand.logo} alt={`${brand.name} logo`} /></a>)}</div></div><figure><img src="/images/results-dashboard.png" alt="CaterEngine dashboard showing restaurant catering revenue and orders"/><figcaption>Operational dashboard evidence · supplied by CaterEngine</figcaption></figure></div>
             <p className="real-results-disclaimer">Historical and aggregate figures are CaterEngine-reported and are not a guarantee of future performance. Results vary by restaurant, market, menu, capacity, service, and execution.</p>
           </div>
         </section>
