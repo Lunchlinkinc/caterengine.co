@@ -40,7 +40,17 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({"@context":"https://schema.org","@type":"Organization",name:"CaterEngine",url:"https://caterengine-growth.info211179.chatgpt.site",email:"getcaterengine@gmail.com",description:"Restaurant catering technology, demand generation, and operating support.",areaServed:[{"@type":"City",name:"Houston"},{"@type":"City",name:"Austin"},{"@type":"City",name:"Dallas"}]})}} />
+        <a
+          className="whatsapp-contact"
+          href="https://wa.me/14374764764"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Chat with CaterEngine on WhatsApp at 437-476-4764"
+        >
+          <span className="whatsapp-mark" aria-hidden="true">☎</span>
+          <span><b>WhatsApp</b><small>437-476-4764</small></span>
+        </a>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({"@context":"https://schema.org","@type":"Organization",name:"CaterEngine",url:"https://caterengine-growth.info211179.chatgpt.site",email:"getcaterengine@gmail.com",telephone:"+1-437-476-4764",description:"Restaurant catering technology, demand generation, and operating support.",areaServed:[{"@type":"City",name:"Houston"},{"@type":"City",name:"Austin"},{"@type":"City",name:"Dallas"}]})}} />
       </body>
     </html>
   );
