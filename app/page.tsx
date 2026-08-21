@@ -16,12 +16,6 @@ const partnerBrands = [
   { name: "Gyro City", logo: "/partners/gyro-city.png", url: "https://gyrocity.ca/" },
 ];
 
-const googleReviews = [
-  { brand: "La Rio’s Fresh Mexican Grill", rating: "4.6", count: "360", quote: "Nice fresh food and good service, gave me a tasty beef burrito bowl!", author: "David Levin", url: "https://www.google.com/maps/search/?api=1&query=La+Rio%27s+Fresh+Mexican+Grill+Toronto" },
-  { brand: "Shawarma Moose", rating: "4.5", count: "742", quote: "Love this place, food tastes great and portions are good for the price.", author: "Alex Helwani", url: "https://www.google.com/maps/search/?api=1&query=Shawarma+Moose+Toronto" },
-  { brand: "Mehfill Indian Cuisine", rating: "4.5", count: "4,300+", quote: "Mehfill never disappoints with its authentic flavors and top-notch service.", author: "Google reviewer", url: "https://www.google.com/maps/search/?api=1&query=Mehfill+Indian+Cuisine+Etobicoke" },
-];
-
 export default function Home() {
   return (
     <PageShell>
@@ -90,11 +84,13 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="container partner-voices">
-          <div className="partner-voices-heading"><div><p className="section-tag">Catering brands in our ecosystem</p><h2>Built around restaurants people already love.</h2></div><p>Restaurant identities remain front and centre while stronger catering experiences help customers discover, order, and come back.</p></div>
-          <div className="partner-logo-grid">{partnerBrands.map((brand)=><a key={brand.name} href={brand.url} target="_blank" rel="noreferrer" aria-label={`Visit ${brand.name}`}><img src={brand.logo} alt={`${brand.name} logo`} /></a>)}</div>
-          <div className="google-review-heading"><div><span className="google-g" aria-hidden="true">G</span><div><strong>Customer feedback on Google</strong><small>Public ratings observed August 2026</small></div></div><p>Food and service reviews belong to each restaurant’s customers and do not claim CaterEngine caused the rating.</p></div>
-          <div className="testimonial-grid">{googleReviews.map((review)=><article key={review.brand}><div className="review-rating"><span>★★★★★</span><b>{review.rating}</b><small>{review.count} Google reviews</small></div><blockquote>“{review.quote}”</blockquote><div className="review-source"><span><b>{review.author}</b><small>{review.brand}</small></span><a href={review.url} target="_blank" rel="noreferrer">View on Google ↗</a></div></article>)}</div>
+        <section className="real-restaurant-results">
+          <div className="container">
+            <div className="real-results-intro"><div><p className="section-tag light">Real results</p><h2>From real<br/><em>restaurant operators.</em></h2></div><div><p>CaterEngine-reported performance data shows what happens when catering demand, ordering, and operations work as one system.</p><Link className="white-btn" href="/apply">Could your restaurant be next? →</Link></div></div>
+            <div className="real-results-metrics"><article><strong>$20M</strong><span>reported aggregate catering sales</span></article><article><strong>4 months</strong><span>reported performance period</span></article><article><strong>163</strong><span>orders in a partner report</span></article><article><strong>$653.56</strong><span>reported average order value</span></article></div>
+            <div className="real-results-proof"><div><p className="overline light">Restaurant brands in our ecosystem</p><div className="partner-logo-grid">{partnerBrands.map((brand)=><a key={brand.name} href={brand.url} target="_blank" rel="noreferrer" aria-label={`Visit ${brand.name}`}><img src={brand.logo} alt={`${brand.name} logo`} /></a>)}</div></div><figure><img src="/images/results-dashboard.png" alt="CaterEngine dashboard showing restaurant catering revenue and orders"/><figcaption>Operational dashboard evidence · supplied by CaterEngine</figcaption></figure></div>
+            <p className="real-results-disclaimer">Historical and aggregate figures are CaterEngine-reported and are not a guarantee of future performance. Results vary by restaurant, market, menu, capacity, service, and execution.</p>
+          </div>
         </section>
 
         <section className="container transformation-section">
