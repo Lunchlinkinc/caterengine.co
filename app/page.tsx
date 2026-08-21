@@ -89,11 +89,11 @@ export default function Home() {
           <div className="container">
             <div className="results-heading"><div><p className="section-tag light">Partner performance proof</p><h2>$20M in catering sales.<br/>Four months.</h2></div><p>Our reported aggregate results show what a focused catering engine can produce. The operational dashboard snapshots below offer a closer look at activity managed through the system.</p></div>
             <div className="results-numbers">
-              <div><strong>$106,529.80</strong><span>reported catering revenue</span></div><div><strong>163</strong><span>reported orders</span></div><div><strong>$653.56</strong><span>reported average order value</span></div><div><strong>$3,626.04</strong><span>reported tips</span></div>
+              <div><strong>$360,572.33</strong><span>combined reported revenue</span></div><div><strong>467</strong><span>combined reported orders</span></div><div><strong>2</strong><span>restaurant partner reports</span></div><div><strong>$10,294.86</strong><span>combined reported tips</span></div>
             </div>
             <div className="proof-screens">
-              <figure><div><img src="/images/results-dashboard.png" alt="CaterEngine partner dashboard showing revenue, orders, and invoices" /></div><figcaption>Recent dashboard snapshot · $21,584.92 revenue and 30 orders</figcaption></figure>
-              <figure><div><img src="/images/results-report.png" alt="CaterEngine partner performance report with revenue trend" /></div><figcaption>Historical report snapshot · December 31, 2025–August 31, 2026</figcaption></figure>
+              <figure><div><img src="/images/larios-results-report.png" alt="La Rio's Fresh Mexican Grill report showing revenue, orders, tips, and average order value" /></div><figcaption>La Rio's Fresh Mexican Grill · $249,092.12 revenue · 295 orders</figcaption></figure>
+              <figure><div><img src="/images/shawarma-moose-results-report.png" alt="Shawarma Moose report showing revenue, orders, tips, and average order value" /></div><figcaption>Shawarma Moose · $111,480.21 revenue · 172 orders</figcaption></figure>
             </div>
             <p className="proof-disclaimer">Results vary by restaurant, market, menu, capacity, service, and execution. Screenshots were supplied by CaterEngine and reflect different reporting periods.</p>
           </div>
