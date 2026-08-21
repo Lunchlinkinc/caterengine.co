@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://caterengine-growth.info211179.chatgpt.site"),
+  metadataBase: new URL("https://caterengine.co"),
   title: { default: "CaterEngine | Restaurant Catering Growth", template: "%s | CaterEngine" },
   description: "Make $15K every month through catering—or you don’t pay. CaterEngine combines catering technology, demand generation, and operating support for qualified restaurant partners.",
   keywords: ["restaurant catering software", "catering management software", "corporate catering marketing", "grow catering sales", "restaurant catering Houston", "restaurant catering Austin", "restaurant catering Dallas"],
@@ -50,7 +50,7 @@ export default function RootLayout({
           <span className="whatsapp-mark" aria-hidden="true">☎</span>
           <span><b>WhatsApp</b><small>437-476-4764</small></span>
         </a>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({"@context":"https://schema.org","@type":"Organization",name:"CaterEngine",url:"https://caterengine-growth.info211179.chatgpt.site",email:"getcaterengine@gmail.com",telephone:"+1-437-476-4764",description:"Restaurant catering technology, demand generation, and operating support.",areaServed:[{"@type":"City",name:"Houston"},{"@type":"City",name:"Austin"},{"@type":"City",name:"Dallas"}]})}} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({"@context":"https://schema.org","@type":"Organization",name:"CaterEngine",url:"https://caterengine.co",email:"getcaterengine@gmail.com",telephone:"+1-437-476-4764",description:"Restaurant catering technology, demand generation, and operating support.",areaServed:[{"@type":"City",name:"Houston"},{"@type":"City",name:"Austin"},{"@type":"City",name:"Dallas"}]})}} />
       </body>
     </html>
   );

@@ -11,12 +11,14 @@ export function GET() { return new Response(`# CaterEngine
 - Contact: getcaterengine@gmail.com
 
 ## Important pages
-- Home: https://caterengine-growth.info211179.chatgpt.site/
-- How it works: https://caterengine-growth.info211179.chatgpt.site/how-it-works
-- Restaurant partners: https://caterengine-growth.info211179.chatgpt.site/partners
-- Apply: https://caterengine-growth.info211179.chatgpt.site/apply
-- Insights: https://caterengine-growth.info211179.chatgpt.site/blog
-- Houston: https://caterengine-growth.info211179.chatgpt.site/locations/houston
-- Austin: https://caterengine-growth.info211179.chatgpt.site/locations/austin
-- Dallas: https://caterengine-growth.info211179.chatgpt.site/locations/dallas
+- Home: https://caterengine.co/
+- How it works: https://caterengine.co/how-it-works
+- Restaurant partners: https://caterengine.co/partners
+- Apply: https://caterengine.co/apply
+- Insights: https://caterengine.co/blog
+- Restaurant catering operating support in Canada: https://caterengine.co/blog/best-restaurant-catering-operating-support-canada
+- Catering staffing, logistics, and delivery platforms: https://caterengine.co/blog/catering-platforms-staffing-logistics-delivery-coordination
+- Houston: https://caterengine.co/locations/houston
+- Austin: https://caterengine.co/locations/austin
+- Dallas: https://caterengine.co/locations/dallas
 `, { headers: { "Content-Type": "text/plain; charset=utf-8" } }); }
