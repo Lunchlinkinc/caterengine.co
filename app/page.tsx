@@ -22,16 +22,16 @@ export default function Home() {
       <main>
         <section className="hero-v2">
           <div className="container hero-v2-grid">
-            <div className="hero-v2-copy">
-              <p className="overline">The CaterEngine growth guarantee</p>
-              <h1>Make $15K every month through catering—<br/><em>or you don’t pay.</em></h1>
-              <p className="hero-text">We generated $20M in catering sales in four months. Now CaterEngine brings the ordering experience, demand generation, and hands-on operating support to help qualified restaurant partners build a serious catering channel.</p>
-              <div className="actions"><Link className="primary-btn" href="/apply">Apply to become a partner <span>→</span></Link><a className="quiet-link" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3BBIEf8UCyIYBlPyt_lcpFfm_RzF_RZ28koeo8B6H3wBPju4V8zAynz2nY7XrORxUoreXYRllv" target="_blank" rel="noreferrer">Book a Google Meet</a></div>
-              <div className="trust-line"><span>✓ $15K monthly catering target</span><span>✓ Performance guarantee for qualified partners</span></div>
-              <p className="guarantee-note">Eligibility, onboarding, operating requirements, measurement period, and guarantee terms apply. Historical sales are aggregate CaterEngine-reported results; individual results vary.</p>
-            </div>
             <div className="hero-photo gold-hero-art">
               <img src="/images/caterengine-premium-catering-hero.png" alt="Premium restaurant catering spread prepared for a corporate event" />
+              <div className="hero-v2-copy">
+                <p className="overline">Technology · Demand · Operating support</p>
+                <h1>Turn your restaurant into a <em>catering growth engine.</em></h1>
+                <p className="hero-text">We help qualified restaurants win larger catering orders with a branded ordering experience, local demand generation, and hands-on support from inquiry through fulfillment and repeat business.</p>
+                <div className="hero-proof"><span><b>$15K</b> monthly catering target</span><span><b>$20M</b> reported catering sales in four months</span></div>
+                <div className="actions"><Link className="primary-btn" href="/apply">Grow my catering business <span>→</span></Link><a className="quiet-link" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3BBIEf8UCyIYBlPyt_lcpFfm_RzF_RZ28koeo8B6H3wBPju4V8zAynz2nY7XrORxUoreXYRllv" target="_blank" rel="noreferrer">Book a Google Meet</a></div>
+                <p className="guarantee-note">Performance guarantee for qualified partners. Eligibility and terms apply; individual results vary.</p>
+              </div>
             </div>
           </div>
         </section>
