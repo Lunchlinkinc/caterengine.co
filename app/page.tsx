@@ -1,6 +1,9 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { PageShell } from "./components/PageShell";
 import { blogPosts } from "./blog/posts";
+
+export const metadata: Metadata = { title: "Restaurant Catering Growth System for Owners", description: "CaterEngine helps restaurant owners increase catering sales with ordering software, corporate catering lead generation, and hands-on fulfillment support.", alternates: { canonical: "/" } };
 
 const marketStats = [
   ["75%", "of restaurant traffic now happens off-premises"],
@@ -23,9 +26,9 @@ export default function Home() {
         <section className="hero-v2">
           <div className="container hero-v2-grid">
             <div className="hero-v2-copy">
-              <p className="overline">The CaterEngine growth guarantee</p>
+              <p className="overline">For restaurant owners and multi-location operators</p>
               <h1>Make $15K every month through catering—<br/><em>or you don’t pay.</em></h1>
-              <p className="hero-text">We generated $20M in catering sales in four months. CaterEngine brings the ordering experience, demand generation, and hands-on operating support to help qualified restaurant partners build a serious catering channel.</p>
+              <p className="hero-text">CaterEngine is a restaurant growth partner—not a catering company for consumers. We bring branded ordering technology, corporate catering demand generation, and hands-on operating support to help qualified restaurants build a serious revenue channel.</p>
               <div className="actions"><Link className="primary-btn" href="/apply">Apply to become a partner <span>→</span></Link><a className="quiet-link" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3BBIEf8UCyIYBlPyt_lcpFfm_RzF_RZ28koeo8B6H3wBPju4V8zAynz2nY7XrORxUoreXYRllv" target="_blank" rel="noreferrer">Book a Google Meet</a></div>
               <div className="trust-line"><span>✓ $15K monthly catering target</span><span>✓ Performance guarantee for qualified partners</span></div>
               <p className="guarantee-note">Eligibility, onboarding, operating requirements, measurement period, and guarantee terms apply. Historical sales are aggregate CaterEngine-reported results; individual results vary.</p>

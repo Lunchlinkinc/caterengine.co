@@ -1,5 +1,7 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { PageShell } from "../components/PageShell";
+export const metadata: Metadata = { title: "How Restaurant Catering Growth Works", description: "See how CaterEngine helps restaurant operators qualify the opportunity, design the catering offer, generate demand, and improve fulfillment." };
 
 export default function HowItWorks(){return <PageShell><main><section className="page-hero container"><p className="overline">How it works</p><h1>A practical path from <em>idea to orders.</em></h1><p>Every partnership is shaped around the restaurant, but the operating sequence stays clear.</p></section><section className="container process-list">{[
 ["01","Qualify the opportunity","We review your concept, catering menu, average order economics, kitchen capacity, service radius, and growth goals."],

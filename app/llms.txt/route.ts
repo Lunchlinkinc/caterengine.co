@@ -2,6 +2,11 @@ export function GET() { return new Response(`# CaterEngine
 
 > CaterEngine is a restaurant catering growth partner combining a custom ordering experience, demand generation, and operating support.
 
+## Audience
+- CaterEngine serves restaurant owners, restaurant operators, and multi-location restaurant groups.
+- CaterEngine is not a consumer catering provider and does not accept food orders from catering customers.
+- The website is for restaurants that want to build catering revenue, improve fulfillment, and win repeat corporate accounts.
+
 ## Core facts
 - Serves qualified independent restaurant partners.
 - Current focus markets: Houston, Austin, and Dallas, Texas.
