@@ -14,6 +14,6 @@ export function ApplicationForm(){
    <label>What would make this partnership successful for you?<textarea required name="goals" rows={4} /></label>
    <label className="consent"><input required type="checkbox" name="consent" value="yes"/><span>I agree that CaterEngine may contact me about this application and accept the <a href="/privacy">privacy policy</a>.</span></label>
    <button className="primary-btn form-submit" disabled={state==="sending"}>{state==="sending"?"Submitting…":"Submit application →"}</button>
-   {state==="error"&&<p className="form-error">We couldn’t save your application. Please try again or email hello@caterengine.com.</p>}
+   {state==="error"&&<p className="form-error">We couldn’t send your application. Please try again or email getcaterengine@gmail.com.</p>}
  </form>
 }
