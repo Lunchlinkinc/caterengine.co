@@ -8,6 +8,20 @@ const marketStats = [
   ["57%", "of adults recently used mobile ordering"],
 ];
 
+const partnerBrands = [
+  { name: "La Rio’s Fresh Mexican Grill", logo: "/partners/larios.webp", url: "https://www.larios.ca/" },
+  { name: "Shawarma Moose", logo: "/partners/shawarma-moose.png", url: "https://www.shawarmamoose.ca/" },
+  { name: "LunchLink", logo: "/partners/lunchlink.png", url: "https://lunchlink.ca/" },
+  { name: "Mehfill Indian Cuisine", logo: "/partners/mehfill.png", url: "https://www.mehfill.ca/" },
+  { name: "Gyro City", logo: "/partners/gyro-city.png", url: "https://gyrocity.ca/" },
+];
+
+const googleReviews = [
+  { brand: "La Rio’s Fresh Mexican Grill", rating: "4.6", count: "360", quote: "Nice fresh food and good service, gave me a tasty beef burrito bowl!", author: "David Levin", url: "https://www.google.com/maps/search/?api=1&query=La+Rio%27s+Fresh+Mexican+Grill+Toronto" },
+  { brand: "Shawarma Moose", rating: "4.5", count: "742", quote: "Love this place, food tastes great and portions are good for the price.", author: "Alex Helwani", url: "https://www.google.com/maps/search/?api=1&query=Shawarma+Moose+Toronto" },
+  { brand: "Mehfill Indian Cuisine", rating: "4.5", count: "4,300+", quote: "Mehfill never disappoints with its authentic flavors and top-notch service.", author: "Google reviewer", url: "https://www.google.com/maps/search/?api=1&query=Mehfill+Indian+Cuisine+Etobicoke" },
+];
+
 export default function Home() {
   return (
     <PageShell>
@@ -74,6 +88,13 @@ export default function Home() {
             </div>
             <p className="proof-disclaimer">Results vary by restaurant, market, menu, capacity, service, and execution. Screenshots were supplied by CaterEngine and reflect different reporting periods.</p>
           </div>
+        </section>
+
+        <section className="container partner-voices">
+          <div className="partner-voices-heading"><div><p className="section-tag">Catering brands in our ecosystem</p><h2>Built around restaurants people already love.</h2></div><p>Restaurant identities remain front and centre while stronger catering experiences help customers discover, order, and come back.</p></div>
+          <div className="partner-logo-grid">{partnerBrands.map((brand)=><a key={brand.name} href={brand.url} target="_blank" rel="noreferrer" aria-label={`Visit ${brand.name}`}><img src={brand.logo} alt={`${brand.name} logo`} /></a>)}</div>
+          <div className="google-review-heading"><div><span className="google-g" aria-hidden="true">G</span><div><strong>Customer feedback on Google</strong><small>Public ratings observed August 2026</small></div></div><p>Food and service reviews belong to each restaurant’s customers and do not claim CaterEngine caused the rating.</p></div>
+          <div className="testimonial-grid">{googleReviews.map((review)=><article key={review.brand}><div className="review-rating"><span>★★★★★</span><b>{review.rating}</b><small>{review.count} Google reviews</small></div><blockquote>“{review.quote}”</blockquote><div className="review-source"><span><b>{review.author}</b><small>{review.brand}</small></span><a href={review.url} target="_blank" rel="noreferrer">View on Google ↗</a></div></article>)}</div>
         </section>
 
         <section className="container transformation-section">
