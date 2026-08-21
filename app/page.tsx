@@ -18,7 +18,7 @@ export default function Home() {
               <p className="overline">The CaterEngine growth guarantee</p>
               <h1>Make $15K every month through catering—<br/><em>or you don’t pay.</em></h1>
               <p className="hero-text">We generated $20M in catering sales in four months. Now CaterEngine brings the ordering experience, demand generation, and hands-on operating support to help qualified restaurant partners build a serious catering channel.</p>
-              <div className="actions"><Link className="primary-btn" href="/apply">Apply to become a partner <span>→</span></Link><Link className="quiet-link" href="/how-it-works">Explore the model</Link></div>
+              <div className="actions"><Link className="primary-btn" href="/apply">Apply to become a partner <span>→</span></Link><a className="quiet-link" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3BBIEf8UCyIYBlPyt_lcpFfm_RzF_RZ28koeo8B6H3wBPju4V8zAynz2nY7XrORxUoreXYRllv" target="_blank" rel="noreferrer">Book a Google Meet</a></div>
               <div className="trust-line"><span>✓ $15K monthly catering target</span><span>✓ Performance guarantee for qualified partners</span></div>
               <p className="guarantee-note">Eligibility, onboarding, operating requirements, measurement period, and guarantee terms apply. Historical sales are aggregate CaterEngine-reported results; individual results vary.</p>
             </div>
@@ -86,7 +86,7 @@ export default function Home() {
           <div className="insights-cards">{blogPosts.map((post)=><article key={post.slug}><span>{post.category} · {post.readTime}</span><h3><Link href={`/blog/${post.slug}`}>{post.title}</Link></h3><p>{post.description}</p><Link href={`/blog/${post.slug}`}>Read the guide →</Link></article>)}</div>
         </section>
 
-        <section className="cta-band"><div className="container"><p>Now reviewing restaurants in Houston, Austin, and Dallas.</p><h2>Could catering become your next serious revenue channel?</h2><Link className="white-btn" href="/apply">Start your application <span>→</span></Link></div></section>
+        <section className="cta-band"><div className="container"><p>30-minute discovery calls available Monday–Friday.</p><h2>Let’s talk about your restaurant’s catering opportunity.</h2><a className="white-btn" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3BBIEf8UCyIYBlPyt_lcpFfm_RzF_RZ28koeo8B6H3wBPju4V8zAynz2nY7XrORxUoreXYRllv" target="_blank" rel="noreferrer">Schedule a Google Meet <span>→</span></a></div></section>
       </main>
     </PageShell>
   );
