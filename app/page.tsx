@@ -31,7 +31,7 @@ export default function Home() {
               <p className="guarantee-note">Eligibility, onboarding, operating requirements, measurement period, and guarantee terms apply. Historical sales are aggregate CaterEngine-reported results; individual results vary.</p>
             </div>
             <div className="hero-photo gold-hero-art">
-              <img src="/images/caterengine-gold-hero.jpg" alt="CaterEngine catering success brand banner" />
+              <img src="/images/caterengine-premium-catering-hero.png" alt="Premium restaurant catering spread prepared for a corporate event" />
             </div>
           </div>
         </section>
@@ -96,8 +96,8 @@ export default function Home() {
             <div className="results-mosaic results-mosaic-right" aria-label="Restaurant partners">
               <a className="mosaic-tile tile-one" href="https://www.mehfill.ca/" target="_blank" rel="noreferrer"><img src="/partners/mehfill.png" alt="Mehfill Indian Cuisine logo"/></a>
               <a className="mosaic-tile tile-two" href="https://gyrocity.ca/" target="_blank" rel="noreferrer"><img src="/partners/gyro-city.png" alt="Gyro City logo"/></a>
-              <span className="mosaic-tile tile-three"><img src="/images/catering-spread.jpg" alt="Catered restaurant meal spread"/></span>
-              <span className="mosaic-tile tile-photo"><img src="/images/corporate-catering.jpg" alt="Corporate catering service"/></span>
+              <a className="mosaic-tile tile-three" href="https://burgerrepublic.ca/" target="_blank" rel="noreferrer"><img src="/partners/burger-republic.svg" alt="Burger Republic logo"/></a>
+              <span className="mosaic-tile tile-photo"><img src="/images/caterengine-premium-catering-hero.png" alt="Premium restaurant catering presentation"/></span>
             </div>
           </div>
           <div className="container real-results-detail">
