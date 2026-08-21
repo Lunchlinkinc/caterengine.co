@@ -27,7 +27,7 @@ export default function Home() {
         <section className="hero-v2">
           <div className="container hero-v2-grid">
             <div className="hero-v2-copy">
-              <p className="overline">For restaurant owners and multi-location operators</p>
+              <p className="overline">For restaurant operators across the United States</p>
               <h1>Add $250K a year to your restaurant through catering—<br/><em>or you don’t pay.</em></h1>
               <p className="hero-text">CaterEngine is a restaurant growth partner—not a catering company for consumers. We bring branded ordering technology, corporate catering demand generation, and hands-on operating support to help qualified restaurants build a serious revenue channel.</p>
               <div className="actions"><Link className="primary-btn" href="#restaurant-application">Apply to become a partner <span>→</span></Link><a className="quiet-link" href="https://calendar.app.google/WmCbFXkcxR2xq81U7" target="_blank" rel="noreferrer">Book a Google Meet</a></div>

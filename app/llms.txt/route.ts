@@ -9,7 +9,7 @@ export function GET() { return new Response(`# CaterEngine
 
 ## Core facts
 - Serves qualified independent restaurant partners.
-- Current focus markets: Houston, Austin, and Dallas, Texas.
+- Service area: qualified restaurant partners across the United States.
 - Services include catering storefronts, lead capture, ordering, payments, local demand generation, workflow support, and performance visibility.
 - Qualified partners may be eligible for a performance partnership with no upfront platform cost; a flat-fee option may also be available.
 - Results vary by restaurant, market, menu, capacity, service, and execution.

@@ -19,7 +19,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
       {post.sections.map((section) => <section id={section.heading.toLowerCase().replaceAll(" ", "-").replace(/[^a-z0-9-]/g, "")} key={section.heading}><h2>{section.heading}</h2>{section.paragraphs.map((p) => <p key={p}>{p}</p>)}{section.bullets && <ul>{section.bullets.map((b) => <li key={b}>{b}</li>)}</ul>}</section>)}
       <section className="faq"><p className="section-tag">Frequently asked questions</p>{post.faqs.map((faq) => <details key={faq.question}><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}</section>
     </div></div>
-  </article><section className="cta-band"><div className="container"><p>Houston · Austin · Dallas</p><h2>Turn catering into a repeatable growth channel.</h2><Link className="white-btn" href="/apply">Apply to partner →</Link></div></section>
+  </article><section className="cta-band"><div className="container"><p>Restaurant partners across the United States</p><h2>Turn catering into a repeatable growth channel.</h2><Link className="white-btn" href="/apply">Apply to partner →</Link></div></section>
   <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
   </main></PageShell>;
 }
