@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Suspense } from "react";
+import { AttributionTracker } from "./components/AttributionTracker";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -39,6 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <Suspense fallback={null}><AttributionTracker /></Suspense>
         {children}
         <a
           className="whatsapp-contact"

@@ -1,5 +1,6 @@
 "use client";
 import { FormEvent, MouseEvent, useState } from "react";
+import { readAttribution } from "../components/AttributionTracker";
 
 const phoneDigits = (value: string) => value.replace(/\D/g, "").replace(/^1(?=\d{10}$)/, "").slice(0, 10);
 const plausiblePhone = (value: string) => {
@@ -32,7 +33,7 @@ export function ApplicationForm() {
     phoneInput.setCustomValidity(plausiblePhone(phone) ? "" : "Enter a valid US or Canadian phone number.");
     if (!e.currentTarget.reportValidity()) return;
     setState("sending");
-    const payload = Object.fromEntries(new FormData(e.currentTarget).entries());
+    const payload = { ...Object.fromEntries(new FormData(e.currentTarget).entries()), ...readAttribution() };
     try {
       const response = await fetch("/api/applications", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(payload) });
       if (!response.ok) throw new Error();

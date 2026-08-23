@@ -16,7 +16,11 @@ export async function POST(request:Request){
   const rows=[
    ["Name",body.name],["Email",body.email.toLowerCase()],["Phone",body.phone],["Restaurant",body.restaurant],
    ["Location",`${body.city}, ${body.state}`],["Website",body.website||"Not provided"],["Monthly catering revenue",body.revenue],
-   ["Number of locations",body.locations],["Partnership goals",body.goals]
+   ["Number of locations",body.locations],["Partnership goals",body.goals],
+   ["How they found us",body.source||"Direct / unknown"],["Original referrer",body.referrer||"None"],
+   ["First page touched",body.firstPage||"Unknown"],["Last page before applying",body.lastPage||"Unknown"],
+   ["First visit",body.firstSeenAt||"Unknown"],["UTM source",body.utmSource||"None"],["UTM medium",body.utmMedium||"None"],
+   ["UTM campaign",body.utmCampaign||"None"],["UTM term",body.utmTerm||"None"],["UTM content",body.utmContent||"None"]
   ];
   const html=`<div style="font-family:Arial,sans-serif;max-width:680px;margin:auto"><h1 style="color:#075985">New CaterEngine restaurant application</h1><table style="border-collapse:collapse;width:100%">${rows.map(([label,value])=>`<tr><th style="text-align:left;padding:12px;border:1px solid #dbeafe;background:#eff6ff;width:34%">${clean(label)}</th><td style="padding:12px;border:1px solid #dbeafe">${clean(value).replace(/\n/g,"<br>")}</td></tr>`).join("")}</table><p style="color:#64748b;font-size:12px">Submitted from caterengine.co</p></div>`;
   const emailResponse=await fetch("https://api.resend.com/emails",{method:"POST",headers:{Authorization:`Bearer ${apiKey}`,"Content-Type":"application/json","User-Agent":"CaterEngine-Website/1.0"},body:JSON.stringify({from:"CaterEngine Website <forms@caterengine.co>",to:["getcaterengine@gmail.com"],reply_to:body.email.trim().toLowerCase(),subject:`New CaterEngine application: ${body.restaurant.trim()}`,html})});
