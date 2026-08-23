@@ -5,7 +5,7 @@ import { getPublishedPosts } from "./posts";
 
 export const dynamic = "force-dynamic";
 
-export const metadata: Metadata = { title: "Restaurant Catering Growth Blog", description: "Practical guidance on restaurant catering software, corporate catering marketing, operations, and growth." };
+export const metadata: Metadata = { title: "Restaurant Catering Growth Blog", description: "Practical guidance on restaurant catering software, corporate catering marketing, operations, and growth.", alternates: { canonical: "/blog" } };
 
 export default function BlogPage() {
   const blogPosts = getPublishedPosts();

@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://caterengine.co"),
+  metadataBase: new URL("https://www.caterengine.co"),
   title: { default: "Restaurant Catering Growth System for Operators | CaterEngine", template: "%s | CaterEngine" },
   description: "CaterEngine helps restaurant owners grow catering revenue with branded ordering technology, B2B demand generation, fulfillment workflows, and hands-on operating support.",
   keywords: ["restaurant catering growth USA", "grow restaurant catering sales", "restaurant catering software", "catering management software for restaurants", "restaurant catering marketing", "corporate catering sales for restaurants", "restaurant catering operations", "catering lead generation for restaurants", "restaurant owner catering program", "multi location restaurant catering", "B2B catering growth", "restaurant catering consulting", "catering growth company for restaurants", "national restaurant catering support"],
@@ -53,7 +53,7 @@ export default function RootLayout({
           <span className="whatsapp-mark" aria-hidden="true">☎</span>
           <span><b>WhatsApp</b><small>437-476-4764</small></span>
         </a>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({"@context":"https://schema.org","@type":"Organization",name:"CaterEngine",url:"https://caterengine.co",email:"getcaterengine@gmail.com",telephone:"+1-437-476-4764",description:"A B2B restaurant catering growth partner providing ordering technology, demand generation, fulfillment workflows, and operating support for restaurant owners and operators across the United States. CaterEngine is not a consumer catering company.",knowsAbout:["restaurant catering growth","restaurant catering software","corporate catering sales","restaurant catering operations"],areaServed:{"@type":"Country",name:"United States"}})}} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({"@context":"https://schema.org","@type":"Organization",name:"CaterEngine",url:"https://www.caterengine.co",logo:"https://www.caterengine.co/images/caterengine-logo.png",email:"getcaterengine@gmail.com",telephone:"+1-437-476-4764",description:"A B2B restaurant catering growth partner providing ordering technology, demand generation, fulfillment workflows, and operating support for restaurant owners and operators across the United States. CaterEngine is not a consumer catering company.",knowsAbout:["restaurant catering growth","restaurant catering software","corporate catering sales","restaurant catering operations"],areaServed:{"@type":"Country",name:"United States"}})}} />
       </body>
     </html>
   );
