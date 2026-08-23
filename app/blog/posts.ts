@@ -1,10 +1,12 @@
+import { scheduledBlogPosts } from "./scheduled-posts";
+
 export type BlogPost = {
   slug: string; title: string; description: string; date: string; readTime: string;
   category: string; intro: string; sections: { heading: string; paragraphs: string[]; bullets?: string[] }[];
   faqs: { question: string; answer: string }[];
 };
 
-export const blogPosts: BlogPost[] = [
+const existingBlogPosts: BlogPost[] = [
   {
     slug: "best-restaurant-catering-operating-support-usa",
     title: "Restaurant Catering Operating Support in the USA: What to Look For",
@@ -99,4 +101,21 @@ export const blogPosts: BlogPost[] = [
   }
 ];
 
-export function getPost(slug: string) { return blogPosts.find((post) => post.slug === slug); }
+export const blogPosts: BlogPost[] = [...scheduledBlogPosts, ...existingBlogPosts];
+
+export function getTorontoDate(now = new Date()) {
+  const parts = new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/Toronto", year: "numeric", month: "2-digit", day: "2-digit"
+  }).formatToParts(now);
+  const value = Object.fromEntries(parts.map(({ type, value }) => [type, value]));
+  return `${value.year}-${value.month}-${value.day}`;
+}
+
+export function getPublishedPosts(now = new Date()) {
+  const today = getTorontoDate(now);
+  return blogPosts.filter((post) => post.date <= today).sort((a, b) => b.date.localeCompare(a.date));
+}
+
+export function getPost(slug: string, now = new Date()) {
+  return getPublishedPosts(now).find((post) => post.slug === slug);
+}

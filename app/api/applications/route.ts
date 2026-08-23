@@ -1,9 +1,15 @@
 export async function POST(request:Request){
  try{
   const body=await request.json() as Record<string,string>;
-  const required=["name","email","phone","restaurant","city","state","revenue","locations","goals","consent"];
+  if(body.companyFax)return Response.json({ok:true},{status:201});
+  const required=["name","email","phone","restaurant","city","state","website","revenue","locations","goals","consent"];
   if(required.some(k=>!body[k]?.trim()))return Response.json({error:"Please complete all required fields."},{status:400});
+  if(body.name.trim().length<2||body.name.length>80||body.restaurant.trim().length<2||body.restaurant.length>100||body.city.trim().length<2||body.state.trim().length<2||body.goals.trim().length<20||body.goals.length>1000)return Response.json({error:"Please check the length of your answers."},{status:400});
   if(!/^\S+@\S+\.\S+$/.test(body.email))return Response.json({error:"Please enter a valid email."},{status:400});
+  const phone=body.phone.replace(/\D/g,"").replace(/^1(?=\d{10}$)/,"");
+  if(!/^[2-9]\d{2}[2-9]\d{6}$/.test(phone)||/(\d)\1{6,}/.test(phone)||["1234567890","9876543210"].includes(phone)||phone.slice(3,6)==="555")return Response.json({error:"Please enter a valid US or Canadian phone number."},{status:400});
+  try{const website=new URL(body.website);if(!["http:","https:"].includes(website.protocol)||!website.hostname.includes("."))throw new Error();}catch{return Response.json({error:"Please enter a valid restaurant website."},{status:400});}
+  if(body.consent!=="yes")return Response.json({error:"Consent is required."},{status:400});
   const apiKey=process.env.RESEND_API_KEY;
   if(!apiKey)throw new Error("RESEND_API_KEY is not configured");
   const clean=(value:string|undefined)=>String(value||"").replace(/[&<>"']/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]!));

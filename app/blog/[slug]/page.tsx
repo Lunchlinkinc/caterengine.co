@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { PageShell } from "../../components/PageShell";
-import { blogPosts, getPost } from "../posts";
+import { getPost } from "../posts";
 
-export function generateStaticParams() { return blogPosts.map(({ slug }) => ({ slug })); }
+export const dynamic = "force-dynamic";
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> { const post = getPost((await params).slug); return post ? { title: post.title, description: post.description, alternates: { canonical: `/blog/${post.slug}` } } : {}; }
 
 export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
